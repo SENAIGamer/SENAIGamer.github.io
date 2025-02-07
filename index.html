@@ -1,12 +1,355 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-<title>Interclasses: SENAI Gamer</title>
+<html lang="pt-br">
 
-    <meta http-equiv="refresh" content="0; URL='https://juliocoronetti.github.io/InterclasseGamer/'"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interclasses: SENAI Gamer</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <link rel="stylesheet" href="assets/css/parts/navbar.css">
+    <link rel="stylesheet" href="assets/css/parts/header.css">
+    <link rel="stylesheet" href="assets/css/parts/introducao.css">
+    <link rel="stylesheet" href="assets/css/parts/participar.css">
+    <link rel="stylesheet" href="assets/css/parts/footer.css">
+    <link rel="stylesheet" href="assets/css/parts/participantes.css">
+
+    <link link rel="preload" href="assets/css/mediaQuery.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/mediaQuery.css">
+    </noscript>
+
+    <link link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    </noscript>
 </head>
-    <body bgcolor="black">
-        
-    </body>
+
+<body>
+    <!-- LOADER -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDE BAR -->
+    <nav>
+        <button id="menu" aria-label="menu" title="menu"></button>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#home">PRINCIPAL</a></li>
+                <li><a href="#introducao">SOBRE</a></li>
+                <li><a href="#jogo-fifa">JOGOS</a></li>
+                <li><a href="#boxParticipar">PARTICIPE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+                <li><a href="https://docs.google.com/document/d/e/2PACX-1vS6GvJeH4DXqfR9d2qQ7PRL-oP4uRezArfnO82Em-OmhrzmpPsicoCNcTLY3-DNlNjAfYm72q9y4TbP/pub"
+                        target="_blank">REGULAMENTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <a href="#home" id="botaoRetornar">
+        <img src="assets/img/arrowUp.svg" alt="flecha para cima">
+    </a>
+
+    <!-- HEADER -->
+    <header id="home">
+        <div id="titulo">
+            <h1 class="rellax" data-rellax-speed="8">Interclasses:</h1>
+            <h1 class="rellax" data-rellax-speed="6"><span id="spanVermelho">Senai</span> Gamer</h1><h2 class="rellax" data-rellax-speed="4"><span style="color: rgb(0, 157, 255);">2025</span></h2>
+        </div>
+
+        <div id="boxContainer" class="rellax" data-rellax-speed="4">
+            <div>
+                <div id="tituloBox">
+                    <h2>Prepare-se para <br>
+                        uma <span id="spanVermelho">jornada épica.</span></h2>
+                </div>
+
+                <div id="gifContainer"></div>
+
+                <div id="logosContainer">
+                    <a href="#jogo-brawl"><img src="assets/img/header/icons/Brawl Stars logo.png"
+                            alt="Logo do jogo Brawl Stars"></a>
+
+                    <a href="#jogo-fifa"><img src="assets/img/header/icons/Fifa 24 logo.png"
+                            alt="Logo do jogo EA Sports FC 24"></a>
+
+                    <a href="#jogo-pokemon"><img src="assets/img/header/icons/Pokemon GO logo.png"
+                            alt="Logo do jogo Pokémon TCG Pocket"></a>
+
+                    <a href="#jogo-street"><img src="assets/img/header/icons/Street Fighter 6.png"
+                            alt="Logo do jogo Street Fighter 6"></a>
+                </div>
+            </div>
+
+            <div id="card" onclick="trocarImagem()">
+                <div id="detalhesCard">
+                    <h2 id="tituloCard">EA Sports FC 24</h2>
+                    <p id="descricaoCard">Viva a emoção do futebol em sua glória máxima com gráficos de última geração e
+                        jogabilidade imersiva.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="transicao"></div>
+
+    <!-- INTRODUÇÃO -->
+    <section id="introducao">
+        <div id="textosIntroducao">
+            <h2>Um interclasse <br>
+                cheio de emoções <br>
+                e competitividade.</h2>
+            <hr>
+            <p>Prepare-se para mergulhar em um universo repleto de adrenalina, estratégia e muita diversão...</p>
+        </div>
+    </section>
+
+    <section id="participantes">
+        <h2>Chaveamento</h2>
+        <div id="boxChaveamento">
+            <div id="textoChaveamento">
+                <h2>Verifique seu Chaveamento!</h2>
+                <p>Clique nos botões abaixo para conferir</p>
+
+                <div id="boxBotoesChaveamento">
+                    <a href="https://challonge.com/pt_BR/pc8q3yox" class="botoesChaveamento" target="_blank">EA SPORTS FC 24</a>
+                    <a href="https://challonge.com/pt_BR/orv1bg9a" class="botoesChaveamento" target="_blank">STREET FIGHTER 6</a>
+                    <a href="https://challonge.com/pt_BR/tpwcq7oe" class="botoesChaveamento" target="_blank">POKÉMON TCG POCKET</a>
+                    <a href="https://challonge.com/pt_BR/j9xqp7dp" class="botoesChaveamento" target="_blank">BRAWL STARS</a>
+                </div>
+
+                <a href="https://docs.google.com/document/d/1Rvd31GbJjbrWd2SlCThYlmGwkNP8A2YNQPUZkSsCTTs/edit?usp=sharing" id="incricoesChaveamento" target="_blank">Inscrições confirmadas aqui!</a>
+            </div>
+
+            <div id="cardChaveamento"></div>
+        </div>
+    </section>
+
+    <!-- FIFA -->
+    <section class="SecaoJogos" id="jogo-fifa">
+        <div class="JogosContainer">
+
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">EA Sports FC 24</h2>
+                <p class="textoGSAP">(PS4)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Experimente a emoção do futebol no <span id="spanVermelho">EA Sports</span></p>
+                <p class="textoGSAP"><span id="spanVermelho">FC 24</span> onde cada partida é uma jornada rumo à </p>
+                <p class="textoGSAP">glória, e cada gol é uma explosão de celebração.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="transicao"></div>
+
+    <section id="zoom-out">
+        <video autoplay muted loop>
+            <source src="assets/img/section-fifa/fc24-trailer.mp4" type="video/mp4" alt="Vídeo EA Sports FC 24">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </section>
+
+    <!-- STREET FIGHTER 6 -->
+    <section id="jogo-street" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">Street Fighter 6</h2>
+                <p class="textoGSAP">(Xbox Series S)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Entre na arena do <span id="spanVermelho">Street Fighter 6</span> e prove sua</p>
+                <p class="textoGSAP">habilidade em combates épicos, onde cada movimento</p>
+                <p class="textoGSAP">é uma demonstração de destreza e estratégia.</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=rN_PBAK5YyM" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer" alt="Botão trailer">
+            </a>
+        </div>
+    </section>
+
+    <!-- BRAWL STARS -->
+    <section id="jogo-brawl" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">Brawl Stars</h2>
+                <p class="textoGSAP">(Mobile)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Mergulhe na ação frenética de <span id="spanVermelho">Brawl Stars,</span></p>
+                <p class="textoGSAP">onde a diversão é garantida em cada batalha</p>
+                <p class="textoGSAP">multiplayer, desafio e conquista.</p>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=CaryjOdYFa0" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer" alt="Botão trailer">
+            </a>
+        </div>
+    </section>
+
+    <!-- POKÉMON TCG POCKET -->
+    <section id="jogo-pokemon" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">Pokémon TCG Pocket</h2>
+                <p class="textoGSAP">(Mobile)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Batalhe online no jogo de cartas mais popular do mundo</p>
+                <p class="textoGSAP">com <span id="spanVermelho">Pokémon TCG Pocket</span>, monte seu deck de cartas e mostre</p>
+                <p class="textoGSAP">ser um erdadeiro mestre Pokémon!</p>
+            </div>
+
+            <a target="_blank" href="https://www.youtube.com/watch?v=_lljsI-__Nk">
+                <img src="assets/img/trailer.png" class="trailer" alt="Botão trailer">
+            </a>
+        </div>
+    </section>
+
+    <section id="participar">
+        <h2>Gostou do que viu?</h2>
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>EA Sports FC 24</h4>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Street Fighter 6</h4>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Brawl Stars</h4>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Pokémon TCG Pocket</h4>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div id="boxParticipar">
+            <div>
+                <h3>Você está preparado?</h3>
+                <h3>Tente a sorte!</h3>
+            </div>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScWAH3OQXdKInSlT8_TnZxi_o_OhPpdTy31IUVIrQZzDCcWqQ/viewform?pli=1"
+                target="_blank" class="btn btn--action"><span>PARTICIPAR</span></a>
+        </div>
+    </section>
+
+    <footer>
+        <div id="contato">
+            <div class="abasContato">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#home">PRINCIPAL</a></li>
+                    <li><a href="#introducao">SOBRE</a></li>
+                    <li><a href="#jogo-fifa">JOGOS</a></li>
+                </ul>
+            </div>
+
+            <div class="abasContato">
+                <h5>Sobre nós</h5>
+                <p>Site desenvolvido por:</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/duartefx" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Giovana Duarte</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JulioCoronetti" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Julio Coronetti</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PietroMena" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Pedro Henrique</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ContaPraApagar" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Nicolas Macedo</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="abasContato">
+                <h5>Fique por dentro</h5>
+                <p>Verifique o regulamento a baixo:</p>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vS6GvJeH4DXqfR9d2qQ7PRL-oP4uRezArfnO82Em-OmhrzmpPsicoCNcTLY3-DNlNjAfYm72q9y4TbP/pub
+                " id="regulamento" target="_blank">Regulamento
+                </a>
+            </div>
+
+            <div class="abasContato">
+                <h5>Ficou com alguma duvida?</h5>
+                <p>Envie uma mensagem diretamente para nós.</p>
+                <a href="https://wa.me/5515981853391?text=Ol%C3%A1%21+Sou+aluno%28a%29+do+SENAI+e+tenho+uma+d%C3%BAvida+quanto+ao+Interclasses%3A+SENAI+Gamer"
+                    id="botaoEmail" aria-label="Copiar email" title="Copiar email" target="_blank">Clique
+                    aqui!</a>
+            </div>
+        </div>
+
+        <p id="orientador">Orientação: Prof. Leandro Gaudio Rosa</p>
+
+    </footer>
+
+    <!-- JAVASCRIPT LINKS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/gsap.js" defer></script>
+    <script src="assets/js/lenis.js" defer></script>
+</body>
+
 </html>
