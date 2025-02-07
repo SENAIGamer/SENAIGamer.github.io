@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Neue Plak SemiBold';
+    background-color: black;
+}
+
+/* LOADER */
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/header/background-header.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 16px solid transparent;
+    border-top: 16px solid #C20717;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* SEÇÕES JOGOS*/
+
+.SecaoJogos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.JogosContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.JogosTitulo h2 {
+    font-family: "Neue Plak Extended Bold";
+    font-size: 3rem;
+    color: white;
+}
+
+.JogosContainer p {
+    font-family: "Neue Plak Extended SemiBold";
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.8rem;
+}
+
+#jogo-fifa {
+    background-image: url(../img/section-fifa/background.jpg);
+    align-items: flex-start;
+}
+
+#jogo-brawl {
+    height: 120vh;
+    background-image: url(../img/section-brawl/background.jpg);
+}
+
+#jogo-pokemon {
+    height: 120vh;
+    background-image: url(../img/section-pokemon/background.webp); 
+}
+
+#jogo-street {
+    height: 120vh;
+    background-image: url(../img/section-street/background.webp);
+}
+
+/* OUTROS EFEITOS */
+
+#botaoRetornar {
+    display: none;
+    position: fixed;
+    left: 90%;
+    top: 85%;
+    width: 50px;
+    height: 50px;
+    background-color: #C20717;
+    border-radius: 10px;
+    z-index: 9999999;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), 0px 48px 13px 0px transparent inset, 0px 31px 12px 0px transparent inset, 0px 17px 10px 0px transparent inset, 0px 8px 8px 0px transparent inset, 0px 2px 4px 0px transparent inset;
+    transition: .5s;
+}
+
+#botaoRetornar.activeScroll {
+    display: block;
+}
+
+#botaoRetornar img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#botaoRetornar:hover {
+    background-color: #4d040a;
+    color: rgba(255, 255, 255, 0.411);
+}
+
+.transicao {
+    width: 100%;
+    position: absolute;
+    -webkit-box-shadow: 0px 10px 20px 40px rgb(0, 0, 0), 0px 20px 20px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 20px 40px rgb(0, 0, 0), 0px 20px 20px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 20px 40px rgb(0, 0, 0), 0px 20px 20px 6px rgba(0, 0, 0, 0.75);
+}
+
+#spanVermelho {
+    color: #C20717;
+}
+
+#zoom-out {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoom-out video {
+    max-width: 100%;
+    height: 95%;
+}
