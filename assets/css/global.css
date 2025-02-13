@@ -9,6 +9,17 @@ body {
     background-color: black;
 }
 
+.blink {
+    animation: blinker 1s linear infinite;
+    color: rgb(0, 157, 255);
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
 /* LOADER */
 
 .loader-wrapper {
