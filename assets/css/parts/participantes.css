@@ -74,7 +74,7 @@
     display: block;
     width: 200px;
     height: 75px;
-    background-color: #616264;
+    background-color: #0a48c5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@
 }
 
 .botoesChaveamento:hover {
-    background-color: #b6b8bb;
+    background-color: #8f47e7;
 }
 
 #cardChaveamento {

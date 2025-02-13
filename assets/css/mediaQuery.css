@@ -50,11 +50,16 @@
         line-height: 1.5rem;
         height: auto;
     }
+    #linksTopo{
+        text-align: center;
+    }
 
     #gifContainer {
         width: 16rem;
+        height: 10% !important;
         border-radius: 0.9375rem;
         background: url(../../img/header/video-interclasse-low-quality.gif) cover no-repeat;
+        background-size: 100%;
     }
 
     #logosContainer {
