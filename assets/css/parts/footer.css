@@ -43,7 +43,8 @@ footer {
 }
 
 .githubLink img {
-    width: 20%;
+    width: 12%;
+    margin-bottom: 1.5%;
     color: white;
 }
 
